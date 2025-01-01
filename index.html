@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horario del Maquinista</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Driver's Schedule</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,21 +24,8 @@
       padding: 20px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #4CAF50;
-      color: white;
+    section {
+      margin-bottom: 20px;
     }
 
     footer {
@@ -53,45 +39,38 @@
 </head>
 <body>
   <header>
-    <h1>Horario del Maquinista</h1>
+    <h1>Driver's Schedule</h1>
   </header>
 
   <main>
-    <h2>Horario de Turnos</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Fecha</th>
-          <th>Hora de Inicio</th>
-          <th>Hora de Fin</th>
-          <th>Ruta</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>01/01/2025</td>
-          <td>08:00</td>
-          <td>16:00</td>
-          <td>Madrid - Barcelona</td>
-        </tr>
-        <tr>
-          <td>02/01/2025</td>
-          <td>10:00</td>
-          <td>18:00</td>
-          <td>Barcelona - Valencia</td>
-        </tr>
-        <tr>
-          <td>03/01/2025</td>
-          <td>09:00</td>
-          <td>17:00</td>
-          <td>Valencia - Sevilla</td>
-        </tr>
-      </tbody>
-    </table>
+    <section>
+      <p>Driver's Schedule is a simple application to help calculate Continuous Driving, Working Day and Minimum Rest times.</p>
+    </section>
+
+    <section>
+      <p>The main screen is grouped into 3 groups: Continuous Driving, Day and Minimum Rest. In each of them there are 3 cells that correspond to the start time, end time and the difference of the 2. In each row, by entering hours and minutes in 2 of the 3 cells and clicking the green button (play), calculate the third.</p>
+    </section>
+
+    <section>
+      <p>Example:</p>
+      <ul>
+        <li>If we write the start and end time of the day it gives us the total hours worked.</li>
+        <li>Another option is to give it the start time and the maximum number of hours day, the application would show the time at which we would have to finish.</li>
+        <li>Another case could be writing the maximum hours of the day and the end time and get the time we should start.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p>At the bottom there is the “Delete” button that deletes the content of all cells. Also a button that shows the current day that allows you to change it in case you want to save a screenshot to know which day it refers to.</p>
+    </section>
+
+    <section>
+      <p>The application has a light and dark mode, which is activated automatically according to the smartphone settings.</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Horario del Maquinista. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Driver's Schedule. All rights reserved.</p>
   </footer>
 </body>
 </html>
